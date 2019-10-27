@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Weather</title>
+<meta name="viewport" content="width=460" />
+<link rel="apple-touch-icon-precomposed" href="wxs_144x144.png" />
+<style>
+.wxLoc { clear: both; float: left; margin: 20px 0 0 0; }
+.wxLoc a { margin: 0 10px 0 0; }
+.wxLoc a img { border:1px; }
+.imgResize { width:500px; height:300px; }
+.alertImg { width:500px; border:1px solid black; }
+.radarImg { width:500px; height:300px; overflow:hidden; border:1px solid black; }
+</style>
+</head>
+<body>
+<div class="wxLoc">   
+	<iframe src="//forecast.io/embed/#lon=-92.9039&lat=44.9195&name=St Paul MN" type="text/html" frameborder="1" height="275" width="500"></iframe>
+</div>	
+<div class="wxLoc">
+	<a href="//www.weather.gov/mpx/weatherstory">
+		<img class='alertImg' src="//www.weather.gov/images/mpx/wxstory/Tab2FileL.png">
+		<br />
+		<img src="//www.weather.gov/images/mpx/wxstory/Tab1FileL.png" width=48 height=36 />
+		<img src="//www.weather.gov/images/mpx/wxstory/Tab2FileL.png" width=48 height=36 />
+		<img src="//www.weather.gov/images/mpx/wxstory/Tab3FileL.png" width=48 height=36 />
+		<img src="//www.weather.gov/images/mpx/wxstory/Tab4FileL.png" width=48 height=36 />						
+	</a>
+</div>
+<div class="wxLoc">
+	<a href='//radar.weather.gov/radar_lite.php?rid=mpx&product=N0R&loop=no'>
+		<div class='radarImg'><img src="//radar.weather.gov/Conus/RadarImg/uppermissvly.gif"/></div>
+	</a>
+</div>
+<div class="wxLoc">
+	<a href='//radar.weather.gov/radar_lite.php?rid=mpx&product=N0R&loop=no'>
+		<div class='radarImg'><img class='imgResize' src="http://images.intellicast.com/WxImages/Radar/usa.gif"/></div>
+	</a>
+</div>
+<div class="wxLoc">
+	<a href="http://www.weather.gov/">
+		<img class='alertImg' src="//forecast.weather.gov/wwamap/png/US.png">
+	</a>
+</div>
+<div class="wxLoc">
+    <iframe src="//forecast.weather.gov/MapClick.php?lon=-92.9039&lat=44.9195" type="text/html" frameborder="1" height="275" width="500"></iframe>
+</div>	
+<div class="wxLoc" style="height:10px;"></div>
+</body>
+</html>
